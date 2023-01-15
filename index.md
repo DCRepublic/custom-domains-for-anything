@@ -20,6 +20,7 @@ nav_order: 1
 ## Register a free domain with Freenom
 1. I've been using freenom for free domains for a while now and there hasn't been any issues. If you want to pay for a domain or if you already have a domain you pay for then you can skip this step. 
 
+<<<<<<< HEAD
 2. Head to <a href="https://www.freenom.com/en/index.html?lang=en" target="_blank"> Freenom </a> and begin searching for a domain. Type the name you want to use and hit "check avaliability". 
 
 3. You will be prompted with a bunch of free endings (Common ones are .tk .ml and .ga). Choose one that you like and follow the steps to checkout and claim your domain. The free version lets you go up to 12 months on a single domain before it expires. You probably want to choose 12 months! (You will need to create a free account). **You should not have to pay for anything!**
@@ -185,3 +186,50 @@ Then you can create a service so it will restart automatically for you with the 
 ```sudo systemctl restart cloudflared```
 
 
+=======
+2. Head to [Freenom](https://www.freenom.com/en/index.html?lang=en) and begin searching for a domain. Type the name you want to use and hit "check avaliability". 
+
+3. You will be prompted with a bunch of free endings (Common ones are .tk .ml and .ga). Choose one that you like 
+
+
+## Create a Cloudflare Account
+
+First, head to [cloudflare's website](https://cloudflare.com) and sign up for a free account. We will be coming back to this dashboard later.
+
+## Install Cloudflared on your device
+
+The install script depends on the architecture of your system. Check what it is with the following command: 
+
+```console
+uname -a
+```
+
+### arm64 architecture:
+```console
+sudo wget -O cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64
+sudo mv cloudflared /usr/local/bin
+sudo chmod +x /usr/local/bin/cloudflared
+cloudflared -v
+```
+
+### AMD64 architecture:
+```console
+sudo wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+sudo apt-get install ./cloudflared-stable-linux-amd64.deb
+cloudflared -v
+```
+
+### armhf architecture:
+```console
+sudo wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-armhf.deb
+sudo apt-get install ./cloudflared-linux-armhf.deb
+cloudflared -v
+```
+
+Once clouflared has been installed login using your credentials. It will give you a url to paste into a browser for you to login
+
+```console
+cloudflared login
+```
+
+>>>>>>> 5fa1478639e661c83730dad1d0703cfe2d732390

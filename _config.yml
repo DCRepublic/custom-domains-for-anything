@@ -4,8 +4,7 @@ theme: just-the-docs
 
 url: https://custom-domains-for-anything.github.io
 
-plugins:
-  - jekyll-default-layout
+
 
 color_scheme: light
 callouts:
