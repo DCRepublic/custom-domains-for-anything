@@ -1,5 +1,5 @@
 title: Custom Domains for Anything
-description: A starter template for a Jeykll site using the Just the Docs theme!
+description: Using cloudflared and a free domain service you can generate custom domains for any one of your projects!
 theme: just-the-docs
 
 url: https://custom-domains-for-anything.github.io
