@@ -1,11 +1,7 @@
 title: Custom Domains for Anything
 description: Using cloudflared and a free domain service you can generate custom domains for any one of your projects!
-theme: just-the-docs
 
 url: https://custom-domains-for-anything.github.io
-
-plugins:
-  - jekyll-default-layout
 
 
 
